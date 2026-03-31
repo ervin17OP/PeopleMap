@@ -11,6 +11,7 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+.jira.local.json
 
 # Dependencies
 node_modules/

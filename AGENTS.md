@@ -17,6 +17,8 @@ This repository is intended to be the active OpenClaw workspace.
 - No database selected yet
 - GitHub remote connected: `https://github.com/ervin17OP/PeopleMap.git`
 - Default branch: `main`
+- Jira helper available locally via `./scripts/jira`
+- Current Jira project key: `KAN`
 
 ## First objective
 
@@ -34,3 +36,11 @@ Help define the product, choose the stack, scaffold the app, and start implement
   - `git push -u origin <branch>`
 - Never force-push unless explicitly requested.
 - If asked to push directly, verify the current branch and remote first.
+
+## Jira workflow
+
+- Use `./scripts/jira search` to inspect recent Jira issues.
+- Use `./scripts/jira get KAN-1` to read a ticket in detail.
+- Use `./scripts/jira create ...` to create a task when asked.
+- Use `./scripts/jira comment KAN-1 --text "..."` to post progress updates.
+- Use Jira issue keys in branch names, commit messages, and PR titles when the work maps to a ticket.
