@@ -12,6 +12,8 @@ Thumbs.db
 .env.local
 .env.*.local
 .jira.local.json
+.openclaw/
+HEARTBEAT.md
 
 # Dependencies
 node_modules/
