@@ -40,3 +40,20 @@ Modèle d'entrée:
 - Jira: accès au projet `KAN` confirmé, création de ticket depuis Telegram testée avec succès.
 - Reste à faire: démarrer le développement réel de PeopleMap à partir d'un ticket Jira.
 - Risques / blocages: stabilité imparfaite du lancement automatique OpenClaw au boot Windows; lancement manuel stable préféré pour l'instant.
+
+---
+
+## 2026-04-01 13:30 - KAN-6 - Base Expo reconstruite pour partage
+
+- Demande: remettre le repo dans un etat recuperable sur un autre PC puis tout pousser sur GitHub.
+- Actions realisees: reconstruction d'une base Expo versionnable dans mobile/, ajout d'un App.tsx minimal, d'une configuration Expo/TypeScript propre, et d'un .gitignore local pour exclure .expo, dist et 
+ode_modules.
+- Fichiers touches: mobile/.gitignore, mobile/package.json, mobile/app.json, mobile/babel.config.js, mobile/tsconfig.json, mobile/index.ts, mobile/App.tsx, SUIVI.md.
+- Commandes/tests lances: nettoyage de 
+ode_modules, 
+pm install, lancement Expo web local.
+- Git: branche eature/KAN-6-setup-supabase, commit a creer puis push.
+- Jira: travail transverse pour rendre le chantier mobile partageable.
+- Reste a faire: reconnecter le vrai travail fonctionnel OpenClaw aux tickets actifs et stabiliser l'apercu mobile Expo Go.
+- Risques / blocages: la pile actuelle demande une version Node un peu plus recente pour certains paquets React Native, meme si le preview web fonctionne deja.
+
