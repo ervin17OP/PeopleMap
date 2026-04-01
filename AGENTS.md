@@ -11,6 +11,7 @@ This repository is intended to be the active OpenClaw workspace.
 - Keep setup and run commands documented in `README.md` as the project evolves.
 - Prefer Jira over GitHub Issues for work tracking in this project.
 - Do not create GitHub Issues unless the user explicitly asks for GitHub Issues.
+- Keep `SUIVI.md` updated after each meaningful task or session.
 
 ## Current state
 
@@ -110,3 +111,18 @@ Help define the product, choose the stack, scaffold the app, and start implement
 6. Commit with the Jira key.
 7. Push the branch to GitHub.
 8. Comment on the Jira ticket with progress, status, and next step.
+
+## Persistent task log
+
+- `SUIVI.md` is the persistent handoff log for this repository.
+- Update it after each meaningful action so another agent or human can quickly understand:
+  - what was requested
+  - what was done
+  - what files changed
+  - what commands or checks were run
+  - what remains to do
+  - any blockers or risks
+- Prefer appending a short dated entry rather than rewriting history.
+- If a Jira ticket exists, include the Jira key in the entry title.
+- If work was pushed to GitHub, note the branch and latest commit hash.
+- Before starting a new task, read the latest relevant entries in `SUIVI.md`.
