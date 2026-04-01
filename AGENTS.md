@@ -44,6 +44,8 @@ Help define the product, choose the stack, scaffold the app, and start implement
 - Never force-push unless explicitly requested.
 - If asked to push directly, verify the current branch and remote first.
 - When work is tied to a Jira ticket, branch names and commits must include the Jira key.
+- If GitHub push from WSL fails because of auth, use the Windows-authenticated wrapper:
+  - `cmd.exe /c C:\Users\ervin\PeopleMap\scripts\git-push.cmd <branch>`
 
 ## Branch naming
 
