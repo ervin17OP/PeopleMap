@@ -96,10 +96,39 @@ Ce profil alimente directement :
 - helper Jira connecté pour le projet `KAN`
 - Telegram disponible comme canal de commande
 - cadrage produit initial défini
+- première application Expo initialisée dans `mobile/`
+
+## Lancer l'application mobile
+
+```bash
+cd /mnt/c/Users/ervin/PeopleMap/mobile
+npm install
+npm start
+```
+
+Raccourcis utiles :
+
+```bash
+cd /mnt/c/Users/ervin/PeopleMap/mobile
+npm run web
+```
+
+## Structure actuelle
+
+```text
+mobile/
+  src/
+    components/
+    navigation/
+    screens/
+    services/
+    store/
+    theme/
+```
 
 ## Prochaine étape recommandée
 
-Découper le cadrage en premières tâches Jira concrètes, puis créer la branche de démarrage pour initialiser l'application Expo et la structure technique du MVP.
+Construire le prochain incrément produit sur cette base Expo : auth, données Supabase et premiers écrans métier du MVP.
 
 ## Workflow opérationnel
 

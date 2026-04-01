@@ -212,6 +212,19 @@ Modèle d'entrée:
 
 ---
 
+## 2026-04-01 10:58 - KAN-5 - Première app Expo PeopleMap livrée
+
+- Demande: créer une première application React Native avec Expo avec un écran d'accueil PeopleMap propre, mettre à jour le suivi, commit et push sur la branche courante.
+- Actions réalisées: initialisation de l'application Expo dans `mobile/`, configuration TypeScript, ajout d'une navigation React Navigation avec écran d'accueil PeopleMap, création d'une structure `src/components`, `src/navigation`, `src/screens`, `src/services`, `src/store`, `src/theme`, ajout du support web Expo et mise à jour du `README.md` avec les commandes de lancement.
+- Fichiers touchés: `README.md`, `SUIVI.md`, `mobile/App.tsx`, `mobile/app.json`, `mobile/babel.config.js`, `mobile/package.json`, `mobile/package-lock.json`, `mobile/src/components/FeatureCard.tsx`, `mobile/src/navigation/AppNavigator.tsx`, `mobile/src/screens/HomeScreen.tsx`, `mobile/src/services/index.ts`, `mobile/src/store/index.ts`, `mobile/src/theme/colors.ts`, `mobile/src/theme/spacing.ts`.
+- Commandes/tests lancés: `npx create-expo-app@latest mobile --template blank-typescript`, `npm install`, `npm install @react-navigation/... react-native-gesture-handler react-native-reanimated react-native-safe-area-context react-native-screens`, `npx expo install react-dom react-native-web`, `npm install -D babel-preset-expo`, `npx tsc --noEmit`, `npx expo export --platform web`.
+- Git: branche `feature/KAN-5-init-projet-react-native-avec-expo`, commit en préparation.
+- Jira: implémentation concrète du ticket `KAN-5`.
+- Reste à faire: brancher les prochains tickets métier sur cette base (Supabase, auth, données personnes).
+- Risques / blocages: installation npm lente sur le workspace Windows monté dans WSL, mais build web et validation TypeScript OK.
+
+---
+
 ## 2026-04-01 10:15 - KAN-5 - Workflow Git push WSL documenté
 
 - Demande: fiabiliser le push Git depuis WSL/OpenClaw et conserver les changements de workflow en attente.
